@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "blinderswallet": {
+      "hosting": {
+        "blinderswallet": [
+          "blinderswallet"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "blinderswallet"
+  }
+}
