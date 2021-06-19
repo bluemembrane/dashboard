@@ -1,9 +1,30 @@
-<mat-toolbar class="mat-elevation-z2 fixed top-0">Dashboard</mat-toolbar>
+<mat-toolbar class="mat-elevation-z2 fixed top-0 z-10">Dashboard</mat-toolbar>
 
 <div class="content h-full flex flex-col">
-  <main></main>
+  <main class="px-4 pb-12">
+    <div class="lg:grid lg:grid-cols-2 gap-8">
+      <div class="p-2">
+        <h4 class="text-center">Chart of Time against Input Price</h4>
+        <div #priceIn class="mb-8 flex justify-center md:mb-0"></div>
+      </div>
+      <div class="p-2">
+        <h4 class="text-center">Chart of Time against Output Price</h4>
+        <div #priceOut class="mb-8 flex justify-center md:mb-0"></div>
+      </div>
+      <div class="p-2">
+        <h4 class="text-center">Chart of Time against Input Amount Swapped</h4>
+        <div #amountIn class="mb-8 flex justify-center md:mb-0"></div>
+      </div>
+      <div class="p-2">
+        <h4 class="text-center">Chart of Time against Output Amount Swapped</h4>
+        <div #amountOut class="mb-8 flex justify-center md:mb-0"></div>
+      </div>
+    </div>
+  </main>
 
-  <mat-toolbar class="footer mat-elevation-z1 flex items-center text-center justify-center">
+  <mat-toolbar
+    class="footer mat-elevation-z1 flex items-center text-center justify-center"
+  >
     <p class="mb-0">Copyright &copy;2021</p>
   </mat-toolbar>
 </div>
